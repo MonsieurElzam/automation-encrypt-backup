@@ -1,7 +1,7 @@
 {
   "name": "automation-encrypt-backup",
   "version": "1.0.0",
-  "description": "Sauvegarde chiffrée / Encrypted backup — script Node.js sans dépendance",
+  "description": "Encrypted backup: dependency-free Node.js script",
   "type": "module",
   "license": "MIT",
   "author": "Elzam MAMAH <ceo@monsieurelzam.com> (https://monsieurelzam.com)",
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/MonsieurElzam/automation-encrypt-backup.git"
   },
-  "homepage": "https://monsieurelzam.com/scripts",
+  "homepage": "https://monsieurelzam.com/en/scripts",
   "keywords": [
     "automation",
     "cli",

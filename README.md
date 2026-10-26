@@ -1,23 +1,16 @@
 # automation-encrypt-backup
 
-**Sauvegarde chiffrée** — Chiffre et déchiffre un fichier en AES-256-GCM, clé dérivée par scrypt ; la phrase secrète passe par une variable d'environnement.
+**Encrypted backup.** Encrypts and decrypts a file with AES-256-GCM, scrypt-derived key; the passphrase comes from an environment variable.
 
-> **EN** — *Encrypted backup.* Encrypts and decrypts a file with AES-256-GCM, scrypt-derived key; the passphrase comes from an environment variable.
+Node.js 18+, **no dependencies**, **MIT** licence. No data is sent anywhere. The scripts print their messages in French.
 
-Node.js 18+, **aucune dépendance**, licence **MIT**. Aucune donnée n'est envoyée nulle part. Les messages affichés sont en français.
-
-## Utilisation
+## Usage
 
 ```bash
 BACKUP_PASSPHRASE='…' node src/encrypt-backup.mjs encrypt dump.sql dump.enc
 ```
 
-Aide intégrée (`--help`) :
-
-```text
-Usage : BACKUP_PASSPHRASE='…' node src/encrypt-backup.mjs <encrypt|decrypt> <entree|-> <sortie>
-« - » lit l'entrée standard. Les sauvegardes sans phrase secrète sont refusées.
-```
+Run it with `--help` for the built-in options (the scripts print in French).
 
 ## Tests
 
@@ -25,16 +18,16 @@ Usage : BACKUP_PASSPHRASE='…' node src/encrypt-backup.mjs <encrypt|decrypt> <e
 npm test
 ```
 
-## Limites
+## Limits
 
-- Les exemples de `samples/` sont fictifs ; adaptez les en-têtes de colonnes à vos propres exports.
-- Essayez d'abord sur une copie de vos données.
-- Fourni tel quel, sans garantie (voir `LICENSE`).
+- The files in `samples/` are fictional: adapt the column headers to your own exports.
+- Try it on a copy of your data first.
+- Provided as is, without warranty (see `LICENSE`).
 
-## La série
+## The series
 
-Ce script fait partie d'une série de **scripts d'automatisation libres** (public : sécurité et sauvegarde, entre autres) : [présentation, guides et archive complète](https://monsieurelzam.com/scripts) · [tous les dépôts](https://github.com/MonsieurElzam?tab=repositories&q=automation-).
+This script is part of a series of **free automation scripts** (audience: security and backup, among others): [overview, guides and full archive](https://monsieurelzam.com/en/scripts) · [all repositories](https://github.com/MonsieurElzam?tab=repositories&q=automation-).
 
 ---
 
-Par [Elzam MAMAH](https://monsieurelzam.com) — business analyst, optimisation de processus. Licence MIT.
+By [Elzam MAMAH](https://monsieurelzam.com/en), business analyst and process-optimization expert. MIT licence.
